@@ -1,0 +1,34 @@
+import random
+from winsound import Beep
+
+def BeepMachine():
+    Beep(440, 200)
+    Beep(300, 400)
+    Beep(200, 100)
+    Beep(700, 300)
+    Beep(440, 200)
+
+BeepMachine()
+
+print()
+
+def MultByFive(num):
+    print(num, "*", 5, "is", num*5)
+    
+MultByFive(7)
+
+print()
+
+def ItemDropper():
+    num = random.randrange(0,100)
+    if num < 20:
+        print("a potion fell infront of you")
+    if num < 50:
+        print("You see a cupcake on the table")
+    if num < 75:
+        print("Pick up that dirty sock")
+    else:
+        print("nothing spawned")
+while True:      
+    ItemDropper()
+    choice = input("Enter any key to continue:")
