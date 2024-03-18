@@ -1,0 +1,10 @@
+def calculate_distance(speed, time):
+    answer = speed * time
+    print (answer, "km")
+
+calculate_distance(20, 2)
+
+def calculate_area (length, width):
+    print(length * width)
+
+calculate_area (10, 5)
