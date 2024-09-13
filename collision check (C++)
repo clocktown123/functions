@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+void CollisionCheck(int nums[]);
+
+int main() {
+
+	int coordinates[4];
+	cout << "enter x1, y1, x2, y2" << endl;
+	for (int i = 0; i < 4; i++) {
+		cin >> coordinates[i];
+	}
+
+	CollisionCheck(coordinates);
+
+}
+
+void CollisionCheck(int nums[]) {
+	if (nums[0] == nums[2] and nums[1] == nums[3]) {
+		cout << "True" << endl;
+	}
+	else {
+		cout << "false" << endl;
+	}
+}
