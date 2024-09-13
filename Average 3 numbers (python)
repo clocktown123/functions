@@ -1,0 +1,9 @@
+def AvgNum(Num1, Num2, Num3):
+     print((Num1 + Num2 + Num3)/3)
+
+
+Num1 = int(input("give me the first number"))
+Num2 = int(input("give me the second number"))
+Num3 = int(input("give me the third number"))
+
+AvgNum(Num1, Num2, Num3)
