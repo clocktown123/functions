@@ -1,0 +1,8 @@
+def findMissingNumbers(list):
+    numbers = set(list)
+    length = len(list)
+    output = []
+    for i in range(1, list[-1]):
+        if i not in numbers:
+            output.append(i)
+    return output
